@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 html{
     overflow-x: hidden;
 }
+body{
+    font-family:'Roboto Slab', serif; 
+}
+
 .center{
     text-align: center;
 }
@@ -15,4 +21,14 @@ html{
 }
 .btn-general{
     margin:1em;
+}
+.row.hero-row{
+    padding-top: 3em;
+}
+.clr-blue{
+    color: #414bb2;
+}
+.main-header{
+    font-size: 3.5em;
+    margin:1em 0em;
 }
