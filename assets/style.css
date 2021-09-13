@@ -1,3 +1,6 @@
+html{
+    overflow-x: hidden;
+}
 .center{
     text-align: center;
 }
@@ -9,4 +12,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.btn-general{
+    margin:1em;
 }
