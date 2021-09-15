@@ -60,7 +60,7 @@ body {
    top: 20%;
    padding: 2em;
    background-color: white;
-    position: absolute;
+  position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -71,7 +71,7 @@ body {
   opacity: 1;
 }
 
-.grey-background{
+.login-view{
   position: absolute;
   top: 0px;
   left: 0px;
@@ -79,6 +79,7 @@ body {
   height: 100%;
   z-index: 5;
   background-color: rgba(0,0,0,0.5);
+  display: none;
 }
 
 .icon-close{
