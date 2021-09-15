@@ -47,10 +47,22 @@ body {
   right: 0;
   text-align: center;
   bottom: 10%;
+  transition: .3s;
+  
+}
+
+.read-more:hover{
+    color:#c96929
 }
 
 @media (min-width: 2560px) {
   .frame {
-    margin-top: 10em;
+    margin-top: 15em;
+  }
+  .read-more>i{
+      font-size: 4em;
+  }
+  .read-more> h3{
+      font-size: 4em;
   }
 }
