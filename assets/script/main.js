@@ -1,11 +1,15 @@
-const login_button = document.getElementById("login_button").addEventListener("click", toggleLoginView);
+const loginView = document.getElementById("login_view");
+const login_button = document.getElementById("login_button").addEventListener("click", toggleLoginView(loginView));
+const close_login = document.getElementById("close_login").addEventListener("click", toggleLoginView(loginView));
 
 
-function toggleLoginView() {
-    const loginView = document.getElementById("login_view");
-    if (loginView.style.display === "none") {
-        loginView.style.display = "block";
+const register_view = document.getElementById("register_view").addEventListener("click", toggleLoginView);
+const register_button = document.getElementById("register_button").addEventListener("click", toggleLoginView);
+
+function toggleLoginView(view) {
+    if (view.style.display === "none") {
+        view.style.display = "block";
     } else {
-        loginView.style.display = "none";
+        view.style.display = "none";
     }
   }
