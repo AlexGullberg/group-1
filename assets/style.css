@@ -12,7 +12,7 @@ body{
 }
 
 .hero-background-image {
-    background-image: url(https://images-ext-1.discordapp.net/external/EbtoP4TbUbzJCiBFMwqvHfly8Cxs_L9TB4Z5c_ZFRBA/%3Fixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D1050%26q%3D80/https/images.unsplash.com/photo-1625225233840-695456021cde?width=500&height=333);
+    background-image: url("/assets/images/startpage.jpg");
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
@@ -31,4 +31,11 @@ body{
 .main-header{
     font-size: 3.5em;
     margin:1em 0em;
+}
+
+.frame {
+    padding: 20px;
+    border-radius: 25px;
+    background: #fdfdffdb;
+    box-shadow: 42px 42px 84px #cacacc, -42px -42px 84px #ffffff;
 }
