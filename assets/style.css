@@ -49,7 +49,7 @@ body {
   bottom: 10%;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 2560px) {
   .frame {
     margin-top: 10em;
   }
