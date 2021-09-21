@@ -1,0 +1,21 @@
+.background-container {
+    display: flex;
+    position: absolute;
+}
+
+.bg-item {
+    width: 33.34vw;
+    height: 100vh;
+}
+
+.bg-clr-1 {
+    background-color: #EBEFF8;
+}
+
+.bg-clr-2 {
+    background-color: #BDE4DF;
+}
+
+.bg-clr-3 {
+    background-color: #9BDBCD;
+}
