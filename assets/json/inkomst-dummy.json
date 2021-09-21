@@ -1,0 +1,22 @@
+[{
+    "nameOfProvider": "Skatteverket",
+    "incomeKategori": "Lön",
+    "amount": 15000,
+    "recurring": true,
+    "date": "2021-07-15"
+},
+{
+    "nameOfProvider": "CSN",
+    "incomeKategori": "Bidrag",
+    "amount": 10000,
+    "recurring": true,
+    "date": "2021-07-22"
+}, 
+{
+    "nameOfProvider": "Swish från Savi",
+    "incomeKategori": "Övrigt",
+    "amount": 100,
+    "recurring": false,
+    "date": "2018-07-21"
+}
+]
