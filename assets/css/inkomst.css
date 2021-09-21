@@ -1,6 +1,10 @@
 .background-container {
-    display: flex;
     position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+    display: flex;
+    
 }
 
 .bg-item {
@@ -18,4 +22,13 @@
 
 .bg-clr-3 {
     background-color: #9BDBCD;
+}
+.inkomst-container{
+    width: 100%;
+    height: 100%;
+    background-color:  #f4f7fc;
+    position: relative;
+    z-index: 1;
+ 
+    
 }
