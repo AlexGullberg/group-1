@@ -1,18 +1,21 @@
 let ctx = document.getElementById("myChart").getContext("2d");
 let labels = ["lön","csn","bidrag","rånbyte"];
-let colorHex = ["#FB3640","#EFCA08","#43AA8B","#253D5B"];
+let colorHex = ["#BDE4DD","rgba(255,184,0, 0.5)","#DDE6FB","#FF977C"];
 
 let myChart = new Chart(ctx, {
     type: "pie",
     data: {
         datasets: [{
-            data: [30,10,15,45],
+            data: [15,10,5,70],
             backgroundColor: colorHex
         }],
         labels: labels
     },
-    Options:{
-        responsive:true
+    options:{
+        responsive:true,
+        legend: {
+            position: "bottom"
+        }
     }
 
 })
