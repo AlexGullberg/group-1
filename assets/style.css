@@ -80,7 +80,15 @@ body {
   height: 100%;
   z-index: 5;
   background-color: rgba(0,0,0,0.5);
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .3s, opacity 0.3s linear;
+  
+}
+
+.login-view-toggle {
+  visibility: visible;
+  opacity: 1;
 }
 
 
