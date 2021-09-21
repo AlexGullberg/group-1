@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+body{
+    margin: 0;
+}
+
+.pie-container{
+height: 100vh;
+}
+
+.chart-wrapper{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}

@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.hero-background-image {
+  background-image: url("/assets/images/startpage.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.btn-general {
+  margin: 1em;
+}
+.row.hero-row {
+  padding-top: 3em;
+}
+.clr-blue {
+  color: #414bb2;
+}
+.main-header {
+  font-size: 3.5em;
+  margin: 1em 0em;
+}
+
+.frame {
+  padding: 20px;
+  border-radius: 25px;
+  background: #fdfdffdb;
+  box-shadow: 42px 42px 84px #cacacc, -42px -42px 84px #ffffff;
+}
+.read-more {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 10%;
+  transition: .3s;
+  
+}
+
+.read-more:hover{
+    color:#c96929
+}
+.login-form{
+   width: 50vw;
+   top: 20%;
+   padding: 2em;
+   background-color: white;
+    position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.icon-close{
+    display: block;
+    text-align: right;
+}
+.form-group{
+    margin: 1em;
+
+}
+
+
+@media (min-width: 2560px) {
+  .frame {
+    margin-top: 15em;
+  }
+  .read-more>i{
+      font-size: 4em;
+  }
+  .read-more> h3{
+      font-size: 4em;
+  }
+
+}
