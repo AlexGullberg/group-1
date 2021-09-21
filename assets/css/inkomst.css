@@ -32,4 +32,43 @@
  
 }
 
+.income-info-square {
+    margin: 6em 0;
+}
+
+.income-list-names {
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+.names-seperator {
+    height: 2px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, .7);
+    margin: 10px 0;
+}
+
+.separator-border {
+    border-right: 3px solid rgba(0, 0, 0, .3);
+}
+
+.income-list {
+    padding-left: 0;
+}
+
+.income-list-item {
+    display:inline-block;
+}
+.name-width {
+    width: 170px;
+}
+
+.date-width {
+    width: 150px;
+}
+
+.amount-width {
+    width: 100px;
+}
+
 
