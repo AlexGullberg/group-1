@@ -1,22 +1,43 @@
 [{
     "nameOfProvider": "Skatteverket",
-    "incomeKategori": "Lön",
+    "incomeCategory": "Lön",
     "amount": 15000,
     "recurring": true,
     "date": "2021-07-15"
 },
 {
     "nameOfProvider": "CSN",
-    "incomeKategori": "Bidrag",
+    "incomeCategory": "Bidrag",
     "amount": 10000,
     "recurring": true,
     "date": "2021-07-22"
 }, 
 {
     "nameOfProvider": "Swish från Savi",
-    "incomeKategori": "Övrigt",
+    "incomeCategory": "Övrigt",
     "amount": 100,
     "recurring": false,
     "date": "2018-07-21"
+},
+{
+    "nameOfProvider": "Mtr",
+    "incomeCategory": "Lön",
+    "amount": 17000,
+    "recurring": true,
+    "date": "2021-07-12"
+},
+{
+    "nameOfProvider": "Soc",
+    "incomeCategory": "Bidrag",
+    "amount": 12000,
+    "recurring": true,
+    "date": "2021-07-21"
+}, 
+{
+    "nameOfProvider": "Swish från Aymen",
+    "incomeCategory": "Övrigt",
+    "amount": 9001,
+    "recurring": false,
+    "date": "2018-07-20"
 }
 ]

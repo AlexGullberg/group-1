@@ -12,6 +12,7 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
   <link rel="stylesheet" href="/assets/css/style.css" />
   <link rel="stylesheet" href="/assets/css/inkomst.css" />
+  <link rel="stylesheet" href="/assets/css/pieChart.css" />
 </head>
 
 <body>
@@ -19,6 +20,38 @@
     <div class="bg-item bg-clr-1"></div>
     <div class="bg-item bg-clr-2"></div>
     <div class="bg-item bg-clr-3"></div>
+  </div>
+
+  <div id="register_view" class="login-view">
+    <div class="login-form">
+      <form>
+        <i id="close_login"class="fas fa-times icon-close"></i>
+        <h2>Lägg till inkomst</h2>
+        <div class="form-group">
+          <label for="income-category">Kategori: </label>
+          <select id="income-category">
+            <option> Lön</option>
+            <option> CSN</option>
+            <option> Bidrag</option>
+            <option> Rånbyte</option>
+            <option> Scamming</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="name-employer">Namn: </label>
+         <input type="text" id="name-employer">
+        </div>
+        <div class="form-group">
+          <label for="income-category">Datum: </label>
+         <input type="date" max="2021-12-31" min="">
+        </div>
+        <div class="form-group">
+          <button class="btn-delete">X</button><label for="btn-delete">Radera</label>
+          <button class="btn-Återkommande">X</button><label for="btn-Återkommande">Återkommande</label>
+        </div>
+        <p type="submit" class="btn btn-primary">Spara</p>
+      </form>
+    </div>
   </div>
 
   <div class="row">
@@ -120,6 +153,7 @@
               <div class="pie-container d-flex flex-column justify-content-center flex-nowrap">
                 <div class="title text-center mb-5">
                   <h1>Legendary Pie</h1>
+                  <button class="income-btn">Add Income</button>
                 </div>
                 <div class="chart-wrapper">
                   <canvas id="myChart">

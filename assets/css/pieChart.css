@@ -1,20 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-.pie-container{
-height: 100vh;
+.pie-container {
+  height: 100vh;
 }
 
-.chart-wrapper{
-    width: 80%;
-    height: 80%;
-    margin: 0 auto;
+.chart-wrapper {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
 }
-.pie-container{
-    display: flex;
+.pie-container {
+  display: flex;
 }
-.pie-container > .title h1{
-    justify-content: center;
+.pie-container > .title h1 {
+  justify-content: center;
+}
+
+/* Popup lägg till inkomst */
+
+.title h1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s linear;
+}
+
+.title h1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.add-income-form {
+  width: 28vw;
+  top: 20%;
+  padding: 2em;
+  background-color: white;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 6;
+  background-color: white;
+  opacity: 1;
+}
+
+.add-income-form li {
+  list-style: none;
+  text-align: start;
 }
