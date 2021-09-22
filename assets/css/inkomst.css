@@ -49,17 +49,6 @@
 }
 
 
-<<<<<<< HEAD
-.amount-width {
-    width: 100px;
-}
-
-.header h2 { 
-    background-color: #EBEFF8;
-    text-align: center;
-    font-size: 64px;
-    width: 100%;
-=======
 
 
  .header h2{
@@ -70,7 +59,6 @@
 .header { 
     background-color: #EBEFF8;
     /* width: 100%; */
->>>>>>> eab776fba63a146f049f6720f6a04c9d2a66e3f7
     height: 125px;
     
 }
