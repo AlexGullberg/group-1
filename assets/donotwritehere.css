@@ -19,12 +19,15 @@ body {
   background-size: cover;
   background-position: center;
 }
+
 .btn-general {
   margin: 1em;
 }
+
 .row.hero-row {
   padding-top: 3em;
 }
+
 .clr-blue {
   color: #414bb2;
 }
