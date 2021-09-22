@@ -1,4 +1,5 @@
 let ctx = document.getElementById("myChart").getContext("2d");
+
 let labels = ["Lön", "CSN", "Bidrag", "Rånbyte"];
 let colorHex = ["#BDE4DD", "rgba(255,184,0, 0.5)", "#DDE6FB", "#FF977C"];
 
