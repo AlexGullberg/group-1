@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
 
 html {
   overflow-x: hidden;
@@ -19,12 +19,15 @@ body {
   background-size: cover;
   background-position: center;
 }
+
 .btn-general {
   margin: 1em;
 }
+
 .row.hero-row {
   padding-top: 3em;
 }
+
 .clr-blue {
   color: #414bb2;
 }
