@@ -73,9 +73,30 @@
  .header h2{
     text-align: center;
     font-size: 64px;
-}
     
- .dropdown #month-meny { 
+}
+.header { 
+    border:1px solid black;
+    width: 100%;
+    height: 125px;
+}
+
+select {
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #EFCA08;
+    font-size: 25px;
+    font-weight: bold;
+    border: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 5vh;
+}
+option{
+    border-radius: 20px; 
+}  
+  .dropdown #month-meny { 
      width: 150px;
      height: 40px;
    background-color: #FFB800;
