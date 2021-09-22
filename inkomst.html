@@ -23,55 +23,34 @@
   </div>
 
   <div id="register_view" class="login-view">
-    <div class="add-income-form">
-      <table>
-        <tr>
-          <th colspan="2">
-            <li></li>
-          </th>
-          <th>
-            <li>100.000</li>
-          </th>
-        </tr>
-        
-        <tr>
-          <td>
-            <li>Kategorier:</li>
-          </td>
-          <td>
-            <li>Lön</li>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <li>Namn:</li>
-          </td>
-          <td>
-            <li>Skatteverket</li>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <li>Datum:</li>
-          </td>
-          <td>
-            <li>21 September 2021</li>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            
-            <li> <button>O</button>Radera</li>
-          </td>
-          <td>
-            <li><button>X</button>Återkommande</li>
-          </td>
-        </tr>
-
-      </table>
+    <div class="login-form">
+      <form>
+        <i id="close_login"class="fas fa-times icon-close"></i>
+        <h2>Lägg till inkomst</h2>
+        <div class="form-group">
+          <label for="income-category">Kategori: </label>
+          <select id="income-category">
+            <option> Lön</option>
+            <option> CSN</option>
+            <option> Bidrag</option>
+            <option> Rånbyte</option>
+            <option> Scamming</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="name-employer">Namn: </label>
+         <input type="text" id="name-employer">
+        </div>
+        <div class="form-group">
+          <label for="income-category">Datum: </label>
+         <input type="date" max="2021-12-31" min="">
+        </div>
+        <div class="form-group">
+          <button class="btn-delete">X</button><label for="btn-delete">Radera</label>
+          <button class="btn-Återkommande">X</button><label for="btn-Återkommande">Återkommande</label>
+        </div>
+        <p type="submit" class="btn btn-primary">Spara</p>
+      </form>
     </div>
   </div>
 
