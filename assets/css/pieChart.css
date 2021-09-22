@@ -8,7 +8,13 @@ height: 100vh;
 }
 
 .chart-wrapper{
-    width: 500px;
-    height: 500px;
+    width: 80%;
+    height: 80%;
     margin: 0 auto;
+}
+.pie-container{
+    display: flex;
+}
+.pie-container > .title h1{
+    justify-content: center;
 }
