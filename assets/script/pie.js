@@ -18,26 +18,5 @@ let myChart = new Chart(ctx, {
     legend: {
       position: "bottom",
     },
-    plugins: {
-      datalabels: {
-        color: "#000000",
-        anchor: "end",
-        align: "start",
-        offset: -10,
-        borderWidth: 2,
-        borderColor: "#000000",
-        borderRadius: 25,
-        backgroundColor: (context) => {
-          return context.dataset.backgroundColor;
-        },
-        font: {
-          weight: "bold",
-          size: "10",
-        },
-        formatter: (value) => {
-          return value + "%";
-        },
-      },
-    },
   },
 });
