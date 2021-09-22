@@ -59,3 +59,21 @@ body {
   list-style: none;
   text-align: start;
 }
+
+@media (min-width: 768px) {
+  .chart-wrapper {
+    width: 115%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .chart-wrapper {
+    width: 110%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .chart-wrapper {
+    width: 80%;
+  }
+}
