@@ -51,6 +51,11 @@
 .separator-border {
     border-right: 3px solid rgba(0, 0, 0, .3);
 }
+.list-item-separator{
+    height: 1px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, .4);
+}
 
 .income-list {
     padding-left: 0;
