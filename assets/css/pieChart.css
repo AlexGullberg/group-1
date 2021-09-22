@@ -33,11 +33,11 @@ body {
   opacity: 0;
   transition: visibility 0.3s, opacity 0.3s linear;
 }
-
+/* 
 .title h1 {
   visibility: visible;
   opacity: 1;
-}
+} */
 
 .add-income-form {
   width: 28vw;
