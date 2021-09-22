@@ -1,64 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Johanna Budget App</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/inkomst.css" />
-  </head>
 
-  <body>
-    <div class="background-container">
-      <div class="bg-item bg-clr-1"></div>
-      <div class="bg-item bg-clr-2"></div>
-      <div class="bg-item bg-clr-3"></div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Johanna Budget App</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/inkomst.css" />
+</head>
 
-    <div class="row">
-      <div class="col-10 offset-1">
-        <div class="inkomst-container">
-          <div class="header">
-            <h1>header</h1>
-          </div>
-          <div class="row">
-            <div class="col-2">
-              <div class="navbar">
-                <h1>navbar</h1>
-              </div>
-            </div>
-            <div class="col-5 separator-border">
-              <div class="income-display">
-                <div class="income-info-square">
-                  <div class="income-name-box">
-                    <span class="income-list-names name-width">Namn</span>
-                    <span class="income-list-names date-width">Datum</span>
-                    <span class="income-list-names amount-width">Summa</span>
-                  </div>
-                  <div class="names-seperator"></div>
+<body>
+  <div class="background-container">
+    <div class="bg-item bg-clr-1"></div>
+    <div class="bg-item bg-clr-2"></div>
+    <div class="bg-item bg-clr-3"></div>
+  </div>
 
-                  <ul class="income-list">
-                    <li class="income-list-item name-width">Savi swish</li>
-                    <li class="income-list-item date-width">02-02-2021</li>
-                    <li class="income-list-item amount-width">100.000</li>
+  <div class="row">
+    <div class="col-10 offset-1">
+      <div class="inkomst-container">
+        <div class="header">
+          <h2>Inkomster</h2>
+        </div>
+        <div class="dropdown">
+          <label for="month-meny"></label>
+          <select id="month-meny">
+            <option> <a a href="#">Januari</a></option>
+            <option> <a a href="#">Februari</a></option>
+            <option> <a a href="#">Mars</a></option>
+            <option> <a a href="#">April</a></option>
+            <option> <a a href="#">Maj</a></option>
+            <option> <a a href="#">Juni</a></option>
+            <option> <a a href="#">Juli</a></option>
+            <option><a a href="#">Augusti</a></option>
+            <option> <a a href="#">September</a></option>
+            <option> <a a href="#">Oktober</a></option>
+            <option> <a a href="#">November</a></option>
+            <option> <a a href="#">December</a></option>
+          </select>
+          <input class="year-picker" type="number" min="2021" placeholder="Årtal">
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-2">
+            <div class="navbar">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">LOGO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Budget <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Inkomster</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Utgifter</a>
+                    </li>
+
                   </ul>
                 </div>
-                <div id="income-test"></div>
+              </nav>
+            </div>
+          </div>
+          <div class="col-5 separator-border">
+            <div class="income-display">
+              <div class="income-info-square">
+                <div class="income-name-box">
+                  <span class="income-list-names name-width">Namn</span>
+                  <span class="income-list-names date-width">Datum</span>
+                  <span class="income-list-names amount-width">Summa</span>
+                </div>
+                <div class="names-seperator"></div>
+
+                <ul class="income-list">
+                  <li class="income-list-item name-width">Savi swish</li>
+                  <li class="income-list-item date-width">02-02-2021</li>
+                  <li class="income-list-item amount-width">100.000</li>
+                </ul>
+              </div>
+              <div id="income-test"></div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="income-pie-chart">
+              <div class="pie-container d-flex flex-column justify-content-center align-items-start flex-nowrap">
+                <div class="title text-center mb-5">
+                  <h1>Legendary Pie</h1>
+                </div>
+                <div class="chart-wrapper">
+                  <canvas id="myChart">
+
+                  </canvas>
+                </div>
               </div>
             </div>
+<<<<<<< HEAD
             <div class="col-5">
               <div class="income-pie-chart">
                <div class="pie-container d-flex flex-column justify-content-center flex-nowrap">
@@ -67,16 +115,14 @@
                  </div>
                  <div class="chart-wrapper">
                    <canvas id="myChart">
+=======
+            <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+            <!-- <script src="assets/script/main.js"></script> -->
+            <script src="/assets/script/pie.js"></script>
+            <script src="assets/script/inkomst.js"></script>
+>>>>>>> 266689a20f11a007a6df9b356f5a36e6de00bfde
 
-                   </canvas>
-                 </div>
-               </div>   
-              </div>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>     
-    <!-- <script src="assets/script/main.js"></script> -->
-    <script src="/assets/script/pie.js"></script>
-    <script src="assets/script/inkomst.js"></script>
+</body>
 
-  </body>
 </html>
