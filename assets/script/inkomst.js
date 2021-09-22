@@ -1,9 +1,3 @@
-fetch('assets/json/inkomst-dummy.json')
-  .then(response => response.json())
-  .then(data => console.log(data));
-
-
-
 async function getIncome() {
     let url = 'assets/json/inkomst-dummy.json';
     try {
@@ -15,7 +9,7 @@ async function getIncome() {
     }
 }
 
-async function renderIncome() {
+async function renderIncomeToList() {
     let incomes = await getIncome();
     let html = '';
     incomes.forEach(income => {
@@ -36,4 +30,39 @@ async function renderIncome() {
     container.innerHTML = html;
 }
 
-renderIncome();
+renderIncomeToList();
+
+
+
+async function calculateIncomeCategories() {
+    let incomes = await getIncome();
+    let incomeCategoryValues = {
+        "Lön":0,
+        "Bidrag":0,
+        "Övrigt":0,
+        "Total":0,
+    }
+    incomes.forEach(income => {
+        if(income.incomeCategory === "Lön"){
+            incomeCategoryValues.Lön += income.amount;
+            incomeCategoryValues.Total += income.amount;
+        }
+        if(income.incomeCategory === "Bidrag"){
+            incomeCategoryValues.Bidrag += income.amount;
+            incomeCategoryValues.Total += income.amount;
+        }
+        if(income.incomeCategory === "Övrigt"){
+            incomeCategoryValues.Övrigt += income.amount;
+            incomeCategoryValues.Total += income.amount;
+        }
+    });
+    
+    return incomeCategoryValues;
+}
+
+async function calculateProcentages(){
+    let categoryValues = await calculateIncomeCategories()
+
+}
+test();
+
