@@ -70,5 +70,33 @@
 .amount-width {
     width: 100px;
 }
-
-
+ .header h2{
+    text-align: center;
+    font-size: 64px;
+}
+    
+ .dropdown #month-meny { 
+     width: 150px;
+     height: 40px;
+   background-color: #FFB800;
+   font-size: 20px;   
+}
+  .year-picker{
+      background-color:#FFB800 ;
+      width: 85px;
+      height: 40px;
+ font-size: 20px;  
+ }
+ 
+ /* .navbar{
+     display: inline-flex;
+     flex-direction: column; 
+ } */
+.navbar nav{
+    display: flex;
+    flex-direction: column;
+     
+}
+.nav-item{
+    display:block!important;
+}
