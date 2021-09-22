@@ -3,14 +3,17 @@ async function getIncome() {
     try {
         let res = await fetch(url);
         // console.log("hello")
-        return await res.json();
+        renderIncomeToList(await res.json());
+        let categories = calculateIncomeCategories(await res.json());
+        //calculate percentage med categories parameter
+        //calculatePercentage(categories)
     } catch (error) {
         console.log(error);
     }
 }
 
-async function renderIncomeToList() {
-    let incomes = await getIncome();
+
+function renderIncomeToList(incomes) {
     let html = '';
     incomes.forEach(income => {
         let htmlSegment = `
@@ -30,12 +33,11 @@ async function renderIncomeToList() {
     container.innerHTML = html;
 }
 
-renderIncomeToList();
+//renderIncomeToList();
 
 
 
-async function calculateIncomeCategories() {
-    let incomes = await getIncome();
+function calculateIncomeCategories(incomes) {
     let incomeCategoryValues = {
         "Lön":0,
         "Bidrag":0,
@@ -56,13 +58,17 @@ async function calculateIncomeCategories() {
             incomeCategoryValues.Total += income.amount;
         }
     });
-    
+    // calculate percentages anrop????
     return incomeCategoryValues;
 }
 
-async function calculateProcentages(){
-    let categoryValues = await calculateIncomeCategories()
 
+
+function calculateProcentages(){
+    let categoryValues;
 }
-test();
 
+calculateProcentages();
+
+
+getIncome();
