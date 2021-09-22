@@ -49,18 +49,18 @@ body {
   right: 0;
   text-align: center;
   bottom: 10%;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.read-more:hover{
-    color:#c96929
+.read-more:hover {
+  color: #c96929;
 }
 
-.login-form{
-   width: 50vw;
-   top: 20%;
-   padding: 2em;
-   background-color: white;
+.login-form {
+  width: 50vw;
+  top: 20%;
+  padding: 2em;
+  background-color: white;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -68,22 +68,21 @@ body {
   right: 0;
   text-align: center;
   z-index: 6;
-  background-color:white;
+  background-color: white;
   opacity: 1;
 }
 
-.login-view{
+.login-view {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
   z-index: 5;
-  background-color: rgba(0,0,0,0.5);
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility .3s, opacity 0.3s linear;
-  
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden; 
+  opacity: 0; 
+  transition: visibility 0.3s, opacity 0.3s linear;
 }
 
 .login-view-toggle {
@@ -91,32 +90,25 @@ body {
   opacity: 1;
 }
 
-
-.icon-close{
-    display: block;
-    text-align: right;
+.icon-close {
+  display: block;
+  text-align: right;
 }
 
-.form-group{
-    margin: 1em;
+.form-group {
+  margin: 1em;
 }
-
-
 
 /**********     INKOMST STYLE *********/
-
-
-
 
 @media (min-width: 2560px) {
   .frame {
     margin-top: 15em;
   }
-  .read-more>i{
-      font-size: 4em;
+  .read-more > i {
+    font-size: 4em;
   }
-  .read-more> h3{
-      font-size: 4em;
+  .read-more > h3 {
+    font-size: 4em;
   }
-
 }
