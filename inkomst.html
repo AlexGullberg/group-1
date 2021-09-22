@@ -12,6 +12,7 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
   <link rel="stylesheet" href="/assets/css/style.css" />
   <link rel="stylesheet" href="/assets/css/inkomst.css" />
+  <link rel="stylesheet" href="/assets/css/pieChart.css" />
 </head>
 
 <body>
@@ -19,6 +20,59 @@
     <div class="bg-item bg-clr-1"></div>
     <div class="bg-item bg-clr-2"></div>
     <div class="bg-item bg-clr-3"></div>
+  </div>
+
+  <div id="register_view" class="login-view">
+    <div class="add-income-form">
+      <table>
+        <tr>
+          <th colspan="2">
+            <li></li>
+          </th>
+          <th>
+            <li>100.000</li>
+          </th>
+        </tr>
+        
+        <tr>
+          <td>
+            <li>Kategorier:</li>
+          </td>
+          <td>
+            <li>Lön</li>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <li>Namn:</li>
+          </td>
+          <td>
+            <li>Skatteverket</li>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <li>Datum:</li>
+          </td>
+          <td>
+            <li>21 September 2021</li>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            
+            <li> <button>O</button>Radera</li>
+          </td>
+          <td>
+            <li><button>X</button>Återkommande</li>
+          </td>
+        </tr>
+
+      </table>
+    </div>
   </div>
 
   <div class="row">
@@ -94,6 +148,7 @@
               <div class="pie-container d-flex flex-column justify-content-center flex-nowrap">
                 <div class="title text-center mb-5">
                   <h1>Legendary Pie</h1>
+                  <button class="income-btn">Add Income</button>
                 </div>
                 <div class="chart-wrapper">
                   <canvas id="myChart">

@@ -20,3 +20,7 @@ let myChart = new Chart(ctx, {
     },
   },
 });
+
+// PopupView Income
+
+const addIncomeView = document.getElementsByClassName("income-btn");
