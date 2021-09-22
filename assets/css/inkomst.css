@@ -31,21 +31,28 @@
     display: inline-block;
 }
 
-.names-seperator {
-    height: 2px;
-    width: 400px;
-    background-color: rgba(0, 0, 0, .7);
-    margin: 10px 0;
-}
 
 .income-list {
     display: inline;
-    left: 0;
+    padding: 0;
 }
 
 .income-list-item {
     display: inline;
-    
+    margin: .1em;
+}
+
+.names-seperator {
+    height: 2px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    margin: 10px 0;
+}
+
+.list-item-separator {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
 }
 
 
@@ -156,5 +163,18 @@
 
     .inkomst-container {
         margin-top: 10vh;
+    }
+
+    .names-seperator {
+        height: 2px;
+        width: 400px;
+        background-color: rgba(0, 0, 0, .7);
+        margin: 10px 0;
+    }
+
+    .list-item-separator {
+        height: 1px;
+        width: 400px;
+        background-color: rgba(0, 0, 0, .4);
     }
 }
