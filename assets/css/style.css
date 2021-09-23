@@ -116,3 +116,24 @@ body {
 .logo i {
   margin: auto;
 }
+.info-start div{
+  height: 50em;
+}
+.info-idea{
+ 
+  background-color: cadetblue;  /* ska va bilden på Johanna senare */
+}
+.idea-text-container{
+  
+  width: 300px;
+  background-color:RGBA(215,186,159,3);  /* oklart om opacity blev 30% */
+}
+.idea-text-container h3{
+  color: black;
+  font-size: 56px;
+}
+.idea-text-container p{
+  color:black;
+  font-size: 22px;
+  
+}
