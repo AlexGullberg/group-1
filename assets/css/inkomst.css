@@ -26,29 +26,53 @@
     margin: 6em 0;
 }
 
+.income-display {
+    display: flex;
+    justify-content: center;
+}
+
 .income-list-names {
-    font-size: 1.2rem;
+    display: none;
+}
+
+.income-list-names.dina-inkomster {
     display: inline-block;
+}
+
+
+.income-list {
+    display: flex;
+    padding:0;
+    width: 70vw;
+}
+
+.income-list-item {
+    display: inline-block;
+}
+
+.name-width {
+    margin-right: auto;
+}
+
+.date-width {
+    display: none;
+}
+
+.amount-width {
 }
 
 .names-seperator {
     height: 2px;
-    width: 400px;
+    width: 70vw;
     background-color: rgba(0, 0, 0, .7);
     margin: 10px 0;
 }
 
-.income-list {
-    display: inline;
-    left: 0;
+.list-item-separator {
+    height: 1px;
+    width: 70vw;
+    background-color: rgba(0, 0, 0, .4);
 }
-
-.income-list-item {
-    display: inline;
-    
-}
-
-
 
 
  .header h2{
@@ -133,6 +157,8 @@
 }
 
 
+
+
 @media (min-width: 768px) { 
     
     .separator-border::after {
@@ -147,22 +173,31 @@
 
     .income-list {
         padding-left: 0;
+        display: flex;
+        padding: 0
     }
     
     .income-list-item {
         display:inline-block;
     }
+
+    .income-list-names.date-width {
+        display:none;
+    }
+
+    .income-list-names.dina-inkomster {
+        display: none;
+    }
+
     .name-width {
-        width: 170px;
+        margin-right: auto;
     }
+
+    .income-list {
+        width: 35vw;
+    }
+
     
-    .date-width {
-        width: 150px;
-    }
-    
-    .amount-width {
-        width: 100px;
-    }
 
     .inkomst-container{ 
         height: 80vh;
@@ -189,4 +224,61 @@
     .inkomst-container {
         margin-top: 10vh;
     }
+
+    .names-seperator {
+        width: 35vw;
+    }
+
+    .list-item-separator {
+        width: 35vw;
+    }
+    .income-list-names {
+        font-size: 1.2rem;
+        display: inline-block;
+    }
+
+    .income-info-square {
+        margin: 6em 0;
+        padding-left: 1em;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .income-info-square {
+        margin: 8em 0;
+        padding-left: 1em;
+    }
+
+
+    .name-width {
+        width: 170px;
+        margin-right: 0;
+    }
+    
+    .date-width {
+        display: inline-block;
+        width: 140px;
+    }
+
+    .income-list-names.dina-inkomster {
+        display: none;
+    }
+    
+    .names-seperator {
+        width: 400px;
+    }
+
+    .list-item-separator {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .income-info-square {
+        margin: 8 auto;
+        width: 80%;
+    }
+
 }
