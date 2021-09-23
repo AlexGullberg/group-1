@@ -2,16 +2,18 @@ let labels = [];
 let data = [];
 
 function getPercentageAndCategories(percentage) {
+  for (const key in percentage) {
+    //console.log(`${key}: ${incomeCategoryValues[key]}`);
+    labels.push(key)
+    data.push(percentage[key])
+  }
   //chart.update(); //update after new data
-  labels
-  data
+  myChart.update()
 }
-
-
 
 let ctx = document.getElementById("myChart").getContext("2d");
 
-// let labels = ["Lön", "CSN", "Bidrag", "Rånbyte"];
+
 let colorHex = ["#BDE4DD", "rgba(255,184,0, 0.5)", "#DDE6FB", "#FF977C"];
 
 
@@ -20,7 +22,7 @@ let myChart = new Chart(ctx, {
   data: {
     datasets: [
       {
-        data: [15, 10, 5, 77.85698644801829],
+        data: data,
         backgroundColor: colorHex,
       },
     ],
