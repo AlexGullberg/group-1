@@ -72,8 +72,4 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
-  .chart-wrapper {
-    width: 80%;
-  }
-}
+
