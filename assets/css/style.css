@@ -80,8 +80,8 @@ body {
   height: 100%;
   z-index: 5;
   background-color: rgba(0, 0, 0, 0.5);
-  visibility: hidden; 
-  opacity: 0; 
+  visibility: hidden;
+  opacity: 0;
   transition: visibility 0.3s, opacity 0.3s linear;
 }
 
@@ -111,4 +111,8 @@ body {
   .read-more > h3 {
     font-size: 4em;
   }
+}
+
+.logo i {
+  margin: auto;
 }
