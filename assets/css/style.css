@@ -119,12 +119,14 @@ body {
 .info-start div{
   height: 50em;
 }
+.info-video{
+  
+  background-color: #BDE4DF;
+}
 .info-idea{
- 
   background-color: cadetblue;  /* ska va bilden på Johanna senare */
 }
 .idea-text-container{
-  
   width: 300px;
   background-color:RGBA(215,186,159,3);  /* oklart om opacity blev 30% */
 }
