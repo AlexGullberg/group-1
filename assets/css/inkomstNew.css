@@ -1,0 +1,224 @@
+
+.bg-item {
+    width: 33.34vw;
+    height: 100vh;
+    display: inline;
+}
+
+.bg-clr-1 {
+    background-color: #EBEFF8;
+}
+
+.bg-clr-2 {
+    background-color: #BDE4DF;
+}
+
+.bg-clr-3 {
+    background-color: #9BDBCD;
+}
+.background-container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    display: flex;
+}
+
+.grid-with-areas {
+    display: grid;
+    grid-template-areas: "navbar header header header header header header"
+                         "navbar  list list list pie pie pie"
+                         "navbar  list list list pie pie pie"
+                         "navbar  list list list pie pie pie"
+                         "navbar  list list list pie pie pie";
+    height: 80vh;
+    width: 80vw;
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
+
+.header-area {
+    grid-area: header;
+    background-color: #EBEFF8;
+
+}
+
+.navbar-area {
+    grid-area: navbar;
+    background-color: #dde6fb;
+   
+}
+
+.list-section-area {
+    grid-area: list;
+    background-color: #F4F7FC ;
+    
+}
+.pie-section-area {
+    grid-area: pie;
+    background-color: #F4F7FC ;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Header section */
+
+.header { 
+    background-color: #EBEFF8;
+    /* width: 100%; */
+    height: 125px;
+    margin-left: -15px;
+}
+.year-picker{
+    background-color:RGBA(255,184,0,0.5) ; 
+    height: 25px;
+    width: 100px;
+    font-size: 10px;  
+    border-radius: 20px;
+    font-weight: bold;
+  border: 0;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: vh;
+  
+}
+.year-picker::placeholder{
+   color:black;
+}
+#month-meny { 
+    height: 25px;
+    width: 100px;
+    border-radius: 20px;
+    background-color:RGBA(255,184,0,0.5) ; 
+    font-size: 10px;
+    font-weight: bold;
+    border: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 5vh;
+    }
+    .header h2{
+        text-align:center;
+        font-size: 36;
+        padding-top: 1em;
+    }
+
+
+/* sidebar section */
+
+
+.logo-holder{
+    margin-top: 2em;
+    text-align: center;
+}
+
+    .side-bar ul{
+        list-style-type:none;
+        font-size: 24px;
+        
+       padding: 7px 7px;
+      
+      align-items: center;
+          
+     }
+     .side-bar a{
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        color: #16006C;
+        margin-top: 8px;
+     }
+     .side-bar a:hover{
+        font-size: 112%;
+     }
+     .side-bar a:active{
+        text-decoration: underline 2px  black;
+         
+     }
+
+
+/* sidebar section */ 
+
+
+     .income-info-square {
+        margin: 6em 0;
+    }
+    .income-display {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .income-list-names {
+        /* display: none; */
+    }
+    
+    .income-list-names.dina-inkomster {
+        display: inline-block;
+    }
+    .income-list {
+        display: flex;
+        padding:0;
+        
+    }
+    
+    .income-list-item {
+        display: inline-block;
+    }
+    .income-list-names.dina-inkomster {
+        display: none;
+    }
+    .name-width {
+        margin-right: auto;
+    }
+    
+    /* .date-width {
+        display: none;
+    } */
+    
+    .amount-width {
+    }
+    
+    .names-seperator {
+        height: 2px;
+     
+        background-color: rgba(0, 0, 0, .7);
+        margin: 10px 0;
+    }
+    
+    .list-item-separator {
+        height: 1px;
+     
+        background-color: rgba(0, 0, 0, .4);
+    }
+    .separator-border::after {
+        position: absolute;
+        right: 46%;
+        top: 28%;
+        content: "";
+        height: 60%;
+        width: 2px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+/* pie section */ 
+
+    /* .pie-container {
+        margin-top: 10vh;
+      } */
+      
+      .chart-wrapper {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+      }
+      /* .pie-container {
+        display: flex;
+      }
+      .pie-container > .title h1 {
+        justify-content: center;
+      } */
+      .pie-header{
+          margin-top: 4em;
+          margin-bottom: 2em;
+      }
