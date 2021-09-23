@@ -3,10 +3,14 @@ async function getIncome() {
     try {
         let res = await fetch(url);
         // console.log("hello")
-        renderIncomeToList(await res.json());
-        let categories = calculateIncomeCategories(await res.json());
+        let response = await res.json();
+        renderIncomeToList(response);
+        let categories = calculateIncomeCategories(response);
         //calculate percentage med categories parameter
-        //calculatePercentage(categories)
+        let percentage = calculateProcentages(categories);
+        // Function declared in pie.js
+        getPercentageAndCategories(percentage)
+
     } catch (error) {
         console.log(error);
     }
@@ -43,6 +47,7 @@ function calculateIncomeCategories(incomes) {
         "Bidrag":0,
         "Övrigt":0,
         "Total":0,
+    
     }
     incomes.forEach(income => {
         if(income.incomeCategory === "Lön"){
@@ -63,12 +68,29 @@ function calculateIncomeCategories(incomes) {
 }
 
 
+function calculateProcentages(incomeCategoryValues){
+    let totalValue = incomeCategoryValues.Total;
+    let categoryPercentage = {};
 
-function calculateProcentages(){
-    let categoryValues;
+    for (const key in incomeCategoryValues) {
+        //console.log(`${key}: ${incomeCategoryValues[key]}`);
+        
+        if(incomeCategoryValues[key] > 0 && key !== "Total") {
+
+            let incomePercentageResult = percentage(incomeCategoryValues[key] ,totalValue)
+            categoryPercentage[key] = incomePercentageResult;
+           
+        }
+      }
+      return categoryPercentage;
 }
 
-calculateProcentages();
+
+function percentage(partialValue, totalValue) {
+
+        let percentage = (100 * partialValue) / totalValue; 
+        return Math.round(percentage);
+    }
 
 
 getIncome();

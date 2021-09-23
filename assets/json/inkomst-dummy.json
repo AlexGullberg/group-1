@@ -8,7 +8,7 @@
 {
     "nameOfProvider": "CSN",
     "incomeCategory": "Bidrag",
-    "amount": 10000,
+    "amount": 0,
     "recurring": true,
     "date": "2021-07-22"
 }, 
@@ -29,7 +29,7 @@
 {
     "nameOfProvider": "Soc",
     "incomeCategory": "Bidrag",
-    "amount": 12000,
+    "amount": 1,
     "recurring": true,
     "date": "2021-07-21"
 }, 
