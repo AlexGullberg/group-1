@@ -4,7 +4,7 @@ body {
 }
 
 .pie-container {
-  height: 100vh;
+  margin-top: 10vh;
 }
 
 .chart-wrapper {
