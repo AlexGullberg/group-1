@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="/assets/css/style.css" />
   <link rel="stylesheet" href="/assets/css/inkomst.css" />
   <link rel="stylesheet" href="/assets/css/pieChart.css" />
+
+  <script src="https://kit.fontawesome.com/f82cde2d62.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -25,7 +28,7 @@
   <div id="register_view" class="login-view">
     <div class="login-form">
       <form>
-        <i id="close_login"class="fas fa-times icon-close"></i>
+        <i id="close_login" class="fas fa-times icon-close"></i>
         <h2>Lägg till inkomst</h2>
         <div class="form-group">
           <label for="income-category">Kategori: </label>
@@ -39,11 +42,11 @@
         </div>
         <div class="form-group">
           <label for="name-employer">Namn: </label>
-         <input type="text" id="name-employer">
+          <input type="text" id="name-employer">
         </div>
         <div class="form-group">
           <label for="income-category">Datum: </label>
-         <input type="date" max="2021-12-31" min="">
+          <input type="date" max="2021-12-31" min="">
         </div>
         <div class="form-group">
           <button class="btn-delete">X</button><label for="btn-delete">Radera</label>
@@ -58,38 +61,38 @@
     <div class="col-12 col-md-10 offset-md-1">
       <div class="inkomst-container">
         <div class="row">
-          <div class="col-2">
-            <a href="#">LOGO</a>
+          <div class="col-2 logo" >
+            <i class="fab fa-affiliatetheme"></i>
             <div>
               <div>
               </div>
             </div>
           </div>
-          <div class="col-10">
-        <div class="header">
-          <h2>Inkomster</h2>
-          <div class="dropdown">
-            <label for="month-meny"></label>
-            <select id="month-meny">
-              <option> <a a href="#">Januari</a></option>
-              <option> <a a href="#">Februari</a></option>
-              <option> <a a href="#">Mars</a></option>
-              <option> <a a href="#">April</a></option>
-              <option> <a a href="#">Maj</a></option>
-              <option> <a a href="#">Juni</a></option>
-              <option> <a a href="#">Juli</a></option>
-              <option><a a href="#">Augusti</a></option>
-              <option> <a a href="#">September</a></option>
-              <option> <a a href="#">Oktober</a></option>
-              <option> <a a href="#">November</a></option>
-              <option> <a a href="#">December</a></option>
-            </select>
-            <input class="year-picker" type="number" min="2021" placeholder="Årtal">
+          <div class="col-10 g-0">
+            <div class="header">
+              <h2>Inkomster</h2>
+              <div class="dropdown">
+                <label for="month-meny"></label>
+                <select id="month-meny">
+                  <option> <a a href="#">Januari</a></option>
+                  <option> <a a href="#">Februari</a></option>
+                  <option> <a a href="#">Mars</a></option>
+                  <option> <a a href="#">April</a></option>
+                  <option> <a a href="#">Maj</a></option>
+                  <option> <a a href="#">Juni</a></option>
+                  <option> <a a href="#">Juli</a></option>
+                  <option><a a href="#">Augusti</a></option>
+                  <option> <a a href="#">September</a></option>
+                  <option> <a a href="#">Oktober</a></option>
+                  <option> <a a href="#">November</a></option>
+                  <option> <a a href="#">December</a></option>
+                </select>
+                <input class="year-picker" type="number" min="2021" placeholder="Årtal">
+              </div>
+
+            </div>
           </div>
-  
-        </div>
-      </div>
-            <!-- <div class="navbar">
+          <!-- <div class="navbar">
             <div class="navbar">
               <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">LOGO</a>
@@ -115,7 +118,7 @@
             </div>
           </div> -->
           <div class="row">
-            <div class="col-2">
+            <div class="col-2 g-0">
               <nav>
                 <div class="side-bar">
                   <ul>
@@ -133,43 +136,56 @@
                 </div>
               </nav>
             </div>
-          <div class="col-10 offset-1 offset-md-0 col-md-5 separator-border">
-            <div class="income-display">
-              <div class="income-info-square">
-                <div class="income-name-box">
-                  <span class="income-list-names dina-inkomster">Dina inkomster</span>
-                  <span class="income-list-names name-width">Namn</span>
-                  <span class="income-list-names date-width">Datum</span>
-                  <span class="income-list-names amount-width">Summa</span>
-                </div>
-                <div class="names-seperator"></div>
-                <div class="income-list-parent" id="income_list"></div>
-                
-              </div>
-              
-            </div>
-          </div>
-          <div class="col-10 offset-1 offset-md-0 col-md-5">
-            <div class="income-pie-chart">
-              <div class="pie-container d-flex flex-column justify-content-center flex-nowrap">
-                <div class="title text-center mb-5">
-                  <h1>Legendary Pie</h1>
-                  <button class="income-btn">Add Income</button>
-                </div>
-                <div class="chart-wrapper">
-                  <canvas id="myChart">
+            <div class="col-10 offset-1 offset-md-0 col-md-5 separator-border">
+              <div class="income-display">
+                <div class="income-info-square">
+                  <div class="income-name-box">
+                    <span class="income-list-names dina-inkomster">Dina inkomster</span>
+                    <span class="income-list-names name-width">Namn</span>
+                    <span class="income-list-names date-width">Datum</span>
+                    <span class="income-list-names amount-width">Summa</span>
+                  </div>
+                  <div class="names-seperator"></div>
+                  <div class="income-list-parent" id="income_list"></div>
 
-                  </canvas>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-10 offset-1 offset-md-0 col-md-5">
+              <div class="income-pie-chart">
+                <div class="pie-container d-flex flex-column justify-content-center flex-nowrap">
+                  <div class="title text-center mb-5">
+                    <h1>Legendary Pie</h1>
+                    <button class="income-btn">Add Income</button>
+                  </div>
+                  <div class="chart-wrapper">
+                    <canvas id="myChart">
+
+                    </canvas>
+                  </div>
                 </div>
               </div>
             </div>
-            </div>
+
+
+
+        
+
+
             <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
             <!-- <script src="assets/script/main.js"></script> -->
             <script src="/assets/script/pie.js"></script>
             <script src="assets/script/inkomst.js"></script>
 
+
+
 </body>
 
 </html>
+
+
+
+
+
