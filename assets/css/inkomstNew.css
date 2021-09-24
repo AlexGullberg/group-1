@@ -1,3 +1,10 @@
+/*  General styles   */
+
+.h2-header {
+    font-size: clamp(1.5rem, 2.5vw + 1rem, 3rem);
+}
+
+
 
 .bg-item {
     width: 33.34vw;
@@ -16,6 +23,9 @@
 .bg-clr-3 {
     background-color: #9BDBCD;
 }
+
+/*  Grid styles   */
+
 .background-container {
     position: absolute;
     left: 0px;
@@ -66,33 +76,32 @@
 
 .header { 
     background-color: #EBEFF8;
-    /* width: 100%; */
-    height: 125px;
-    margin-left: -15px;
 }
+
 .year-picker{
     background-color:RGBA(255,184,0,0.5) ; 
-    height: 25px;
-    width: 100px;
-    font-size: 10px;  
+    max-height: 33px;
+    max-width: 150px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     border-radius: 20px;
-    font-weight: bold;
+
   border: 0;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: vh;
+
   
 }
 .year-picker::placeholder{
    color:black;
 }
 #month-meny { 
-    height: 25px;
-    width: 100px;
+    max-height: 36px;
+    width: 150px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     border-radius: 20px;
     background-color:RGBA(255,184,0,0.5) ; 
-    font-size: 10px;
-    font-weight: bold;
+    /* font-size: 10px;
+    font-weight: bold; */
     border: 0;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -101,7 +110,7 @@
     .header h2{
         text-align:center;
         font-size: 36;
-        padding-top: 1em;
+        padding-top: 12px;
     }
 
 
@@ -138,7 +147,7 @@
      }
 
 
-/* sidebar section */ 
+/* List income section */ 
 
 
      .income-info-square {
@@ -162,21 +171,28 @@
         
     }
     
-    .income-list-item {
+    .income-list-item,
+    .income-list-names {
         display: inline-block;
     }
     .income-list-names.dina-inkomster {
         display: none;
     }
     .name-width {
-        margin-right: auto;
+        width: 10vw;
+    }
+
+    
+     .date-width {
+        width: 10vw;
+    } 
+
+    .income-list-names.date-width {
+        width: 10vw;
     }
     
-    /* .date-width {
-        display: none;
-    } */
-    
     .amount-width {
+        
     }
     
     .names-seperator {
@@ -208,8 +224,8 @@
       } */
       
       .chart-wrapper {
-        width: 400px;
-        height: 400px;
+        width: 30vw;
+        height: 30vw;
         margin: 0 auto;
       }
       /* .pie-container {
