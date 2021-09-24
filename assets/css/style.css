@@ -138,4 +138,14 @@ body {
   color:black;
   font-size: 22px;
   
+} 
+.info-salespitch{
+  background-color: #9BDBCD;
+}
+.info-video{
+  background-color: #BDE4DF;
+
+}
+.info-salespitch-text p{
+  color: black;
 }
