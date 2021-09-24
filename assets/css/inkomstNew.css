@@ -4,6 +4,10 @@
     font-size: clamp(1.5rem, 2.5vw + 1rem, 3rem);
 }
 
+.usual-text-size {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
 
 
 .bg-item {
@@ -210,9 +214,9 @@
     .separator-border::after {
         position: absolute;
         right: 46%;
-        top: 28%;
+        top: 24%;
         content: "";
-        height: 60%;
+        height: 62%;
         width: 2px;
         background-color: rgba(0, 0, 0, .5);
     }
