@@ -214,9 +214,9 @@
     .separator-border::after {
         position: absolute;
         right: 46%;
-        top: 24%;
+        top: 32vh;
         content: "";
-        height: 62%;
+        height: 50vh;
         width: 2px;
         background-color: rgba(0, 0, 0, .5);
     }
@@ -228,8 +228,8 @@
       } */
       
       .chart-wrapper {
-        width: 30vw;
-        height: 30vw;
+        width: 30vw; 
+        /* height: 30vw; */
         margin: 0 auto;
       }
       /* .pie-container {
