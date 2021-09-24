@@ -242,3 +242,83 @@
           margin-top: 4em;
           margin-bottom: 2em;
       }
+
+      /* media queries section */ 
+@media screen and (min-width:768px  ) and (max-width:1024px) {
+    .grid-with-areas {
+        display: grid;
+        grid-template-areas: "navbar header header header header header header"
+                             "navbar  list list list list list list"
+                             "navbar  list list list list list list"
+                             "navbar  list list list list list list"
+                             "navbar  list list list list list list"
+                             "navbar  pie pie pie pie pie pie"
+                             "navbar  pie pie pie pie pie pie"
+                             "navbar  pie pie pie pie pie pie"
+                             "navbar  pie pie pie pie pie pie";
+                            
+        height: 80vh;
+        width: 80vw;
+        margin-top: 10vh;
+        margin-left: 10vw;
+    }
+    
+    .header-area {
+        grid-area: header;
+        background-color: #EBEFF8;
+    
+    }
+    
+    .navbar-area {
+        grid-area: navbar;
+        background-color: #dde6fb;
+       
+    }
+    
+    .list-section-area {
+        grid-area: list;
+        background-color: #F4F7FC ;
+        
+    }
+    .pie-section-area {
+        grid-area: pie;
+        background-color: #F4F7FC ;
+        /* height: 100%; */
+        display: flex;
+        justify-content: center;
+    }
+    .separator-border::after{
+        display: none;
+    }
+    .name-width {
+        width: 20vw;
+    }
+
+    
+     .date-width {
+        width: 20vw;
+    } 
+
+    .income-list-names.date-width {
+        width: 20vw;
+    }
+    .chart-wrapper {
+        width: 50vw;
+        margin-bottom: 5vh; 
+    }
+    .bg-item {
+        
+        height: 140vh;
+        
+    }
+    .header h2 {
+        text-align: center;
+        padding: 12px;
+    }
+    .dropdown{
+        text-align: center;
+    }
+    #month-meny{
+        margin-left: 0;
+    }
+}
