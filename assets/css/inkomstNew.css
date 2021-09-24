@@ -242,6 +242,9 @@
           margin-top: 4em;
           margin-bottom: 2em;
       }
+      .arrow-right{
+        display: none;
+    }
 
       /* media queries section */ 
 @media screen and (min-width:768px  ) and (max-width:1024px) {
@@ -263,30 +266,6 @@
         margin-left: 10vw;
     }
     
-    .header-area {
-        grid-area: header;
-        background-color: #EBEFF8;
-    
-    }
-    
-    .navbar-area {
-        grid-area: navbar;
-        background-color: #dde6fb;
-       
-    }
-    
-    .list-section-area {
-        grid-area: list;
-        background-color: #F4F7FC ;
-        
-    }
-    .pie-section-area {
-        grid-area: pie;
-        background-color: #F4F7FC ;
-        /* height: 100%; */
-        display: flex;
-        justify-content: center;
-    }
     .separator-border::after{
         display: none;
     }
@@ -320,5 +299,88 @@
     }
     #month-meny{
         margin-left: 0;
+    }
+    .arrow-right{
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px ){
+    .grid-with-areas {
+        display: grid;
+        grid-template-areas: "header"
+                             "list"
+                             "pie";
+                             
+                            
+        height: 100vh;
+        width: 100vw;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .arrow-right{
+        display: inline-block;
+    }
+    .navbar-area {
+        grid-area: none;
+        background-color: #dde6fb;
+        position: absolute;
+        width: 60vw;
+        padding-top: 1em;
+        height: 100vh;
+        transition: transform ease 0.5s;
+    }
+    .navbar-area::after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 200px;
+        background-color: #dde6fb;
+        /* background-color: red; */
+        top: 4em;
+        left: 55vw;
+        border-radius: 15px;
+    }
+    .arrow-right {
+        left: 60vw;
+        position: absolute;
+        z-index: 10;
+        top: 8vh;
+        height: 200px;
+        width: 40px;
+    }
+    #our_arrow{
+            margin-left: 10px;
+            margin-top: 85px;
+    }
+    .arrow-right.hide-sidebar{
+        margin-left: 0;
+    }
+    .hide-sidebar{
+        transform: translateX(-60vw);  
+    }
+    /* .navbar-area::before {
+        content: "hej";
+        position: absolute;
+        background-color: #dde6fb;
+        color: black;
+        top: 4em;
+        left: 55vw;
+    } */
+    .separator-border::after{
+        display: none;
+    }
+    .name-width, .date-width, .income-list-names.date-width {
+        width: 32vw;
+    }
+    .chart-wrapper {
+        width: 100vw;
+        margin-bottom: 5vh; 
+    }
+    .dropdown, .year-picker, #month-meny{
+        display: block;
+        margin-left: auto;
+        margin-bottom: 5px;
+        margin-right: 5px;
     }
 }
