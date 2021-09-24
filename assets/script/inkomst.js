@@ -22,9 +22,9 @@ function renderIncomeToList(incomes) {
     incomes.forEach(income => {
         let htmlSegment = `
             <ul class="income-list">
-                <li class="income-list-item name-width">${income.nameOfProvider}</li>
-                <li class="income-list-item date-width">${income.date}</li>
-                <li class="income-list-item amount-width">${income.amount}</li>
+                <li class="usual-text-size income-list-item name-width">${income.nameOfProvider}</li>
+                <li class="usual-text-size income-list-item date-width">${income.date}</li>
+                <li class="usual-text-size income-list-item amount-width">${income.amount}</li>
             </ul>
             <div class="list-item-separator"></div>
                             

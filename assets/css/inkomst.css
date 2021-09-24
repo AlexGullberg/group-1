@@ -169,7 +169,7 @@
     .separator-border::after {
         position: absolute;
         right: 40%;
-        top: 25%;
+        top: 26%;
         content: "";
         height: 70%;
         width: 2px;
