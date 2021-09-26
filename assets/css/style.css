@@ -121,26 +121,24 @@ body {
 .info-start div {
   height: 50em;
 }
+.info-salespitch{
+  background-color: #9BDBCD;
+}
+
 .info-video{
   
   background-color: #BDE4DF;
   
 }
-/* .info-idea{
-   
-  
-} */
 .info-idea img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
-
-  
+  object-fit: cover;  
 }
-
-.idea-text-container{
+.idea-text-container {
   width: 300px;
-   /* oklart om opacity blev 30% */
+  height: 100px;
+  background-color: RGBA(215, 186, 159, 3); /* oklart om opacity blev 30% */
 }
 
 .idea-text-container h3{
@@ -148,6 +146,7 @@ body {
   font-size: 22px;
   
 }
+
 .info-why-us{
   background-color: #9BDBCD;
  height: 50em;
@@ -162,27 +161,5 @@ font-size:56px ;
   font-size:22px ;
   }
 
-.info-salespitch{
-  background-color: #9BDBCD;
-}
 
-/* info-video */
 
-.info-video {
-  background-color: #bde4df;
-}
-
-/* info-idea */
-
-/* info-why-us */
-
-.info-idea {
-  background-color: cadetblue; /* ska va bilden på Johanna senare */
-}
-.idea-text-container {
-  width: 300px;
-  background-color: RGBA(215, 186, 159, 3); /* oklart om opacity blev 30% */
-}
-.idea-text-container h3 {
-  color: black;
-}
