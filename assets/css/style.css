@@ -125,16 +125,28 @@ body {
   "video"
   "idea"
   "why-us";
-  height: 50em;
+  height: 30em;
 }
 .info-salespitch{
-  
   grid-area: salespitch;
   background-color: #9BDBCD;
   z-index: 10;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+ 
+}
+
+.info-salespitch-text-container {
+  background-color:RGBA(215,186,159,0.30) ;
+  position:absolute;
+height: 200px;
+width: 50%;
+ top:40% ;
+ left: 20px;
+ padding: 25px;
+ border-radius: 15px;
+ text-align:justify;
 }
 .info-salespitch-image{
   height: 10em;
@@ -142,21 +154,23 @@ body {
 }
 
 .info-video{
-  grid-area: video;
-  background-color: #BDE4DF;
-  z-index: 9;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  grid-area: video;
+  background-color: #BDE4DF;
+  z-index: 9;
+ 
 }
 .info-idea{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   grid-area: idea;
   position: relative;
   text-align: left;
   z-index: 8;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+
 }
 .info-idea img{
   width: 100%;
@@ -186,15 +200,16 @@ width: 50%;
   
 }
 .info-why-us{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   grid-area: why-us;
   background-color: #9BDBCD;
   position: relative;
   /* text-align: left; */
   height: 50em; 
   z-index: 7;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  
 }
 .why-text-container{
   color: black;
