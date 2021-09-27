@@ -119,21 +119,44 @@ body {
 
 /* info-start */
 .info-start div {
+  display: grid;
+  grid-template-areas: 
+  "salespitch"
+  "video"
+  "idea"
+  "why-us";
   height: 50em;
 }
 .info-salespitch{
+  
+  grid-area: salespitch;
   background-color: #9BDBCD;
+  z-index: 10;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.info-salespitch-image{
+  height: 10em;
+  width: 10em;
 }
 
 .info-video{
-  
+  grid-area: video;
   background-color: #BDE4DF;
-  
+  z-index: 9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .info-idea{
+  grid-area: idea;
   position: relative;
   text-align: left;
- 
+  z-index: 8;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .info-idea img{
   width: 100%;
@@ -151,9 +174,6 @@ width: 50%;
  padding: 25px;
  border-radius: 15px;
  text-align:justify;
-
- 
-
 }
 .idea-text-container h4{
   font-size: 48px;
@@ -166,10 +186,15 @@ width: 50%;
   
 }
 .info-why-us{
+  grid-area: why-us;
   background-color: #9BDBCD;
   position: relative;
-  text-align: left;
+  /* text-align: left; */
   height: 50em; 
+  z-index: 7;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .why-text-container{
   color: black;
@@ -193,4 +218,31 @@ margin-bottom: 20px;
   border-radius: 15px;
 }
 
+/* #cus-div{
+  width: 100%;
+  position: relative;
+}
 
+#cus-div:after{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:inherit;
+  z-index: -1;
+  bottom:0;
+  content: ''; */
+}
+/* 
+.info-salespitch:after{
+  transform-origin: left bottom;
+  transform: skewY(3deg);
+}
+.info-video:after{
+  
+}
+.info-idea:after{
+  
+}
+.info-why-us:after{
+  
+} */
