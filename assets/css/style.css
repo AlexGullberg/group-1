@@ -236,6 +236,29 @@ margin-bottom: 20px;
 .trustpilot-widget img{
   border-radius: 15px;
 }
+.info-video::before, .info-video::after{
+ background-color: #9BDBCD;
+  content: '';
+  display:block;
+  height: 30%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 20;
+  -webkit-backface-visibility: hidden; 
+}
+.info-video::before {
+  top: 160vh;
+    transform: skewY(1.5deg);
+    transform-origin: 100% 0;
+    z-index: 20;
+}
+
+.info-video::after {
+  bottom: 0;
+  transform: skewY(-1.5deg);
+  transform-origin: 100%;
+}
 
 /* #cus-div{
   width: 100%;
@@ -249,8 +272,8 @@ margin-bottom: 20px;
   background:inherit;
   z-index: -1;
   bottom:0;
-  content: ''; */
-}
+  content: ''; 
+}*/
 /* 
 .info-salespitch:after{
   transform-origin: left bottom;
