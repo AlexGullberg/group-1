@@ -24,6 +24,43 @@
         <div class="bg-item bg-clr-3"></div>
       </div>
 
+
+      <div id="register_view" class="login-view">
+        <div class="login-form add-income-form">
+          <i id="close_add_income" class="fas fa-times icon-close"></i>
+          <form>
+            <h2>Lägg till inkomst</h2>
+            <div class="input-group">
+
+              <span class="input-group-text" id="name-employer">Kategori:</span>
+              <select class="form-select" id="income-category">
+                <option> Lön</option>
+                <option> CSN</option>
+                <option> Bidrag</option>
+                <option> Rånbyte</option>
+                <option> Scamming</option>
+              </select>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="name-employer">Namn</span>
+              <!-- <label for="name-employer">Namn: </label> -->
+              <!-- <input type="text" id="name-employer"> -->
+              <input id="name-employer" type="text" class="form-control" placeholder="Arbetsgivare" aria-label="name" aria-describedby="name-employer">
+            </div>
+            <div class="input-group">
+              <span class="input-group-text" id="name-employer">Kategori:</span>
+              <input type="date" class="form-control" max="2021-12-31" min="">
+            </div>
+            <div class="form-group">
+              <button class="btn-delete">X</button><label for="btn-delete">Radera</label>
+              <button class="btn-Återkommande">X</button><label for="btn-Återkommande">Återkommande</label>
+            </div>
+            <p type="submit" class="btn btn-primary">Spara</p>
+          </form>
+        </div>
+      </div>
+
+
       <div class="grid-with-areas">
         <div class="header-area">
 
@@ -89,7 +126,7 @@
                 </div>
 
               </div>
-
+              <button id="add_income_button" class="add-income">Lägg till inkomst<i class="fas fa-plus"></i></button>
         </div>
         <div class="pie-section-area">
             <div class="income-pie-chart center">
