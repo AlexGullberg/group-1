@@ -221,6 +221,23 @@
         background-color: rgba(0, 0, 0, .5);
     }
 
+    .add-income {
+        background-color: RGBA(255,184,0,0.5);
+        max-height: 36px;
+        padding:0 1em;
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        border-radius: 20px;
+        border: 0;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        margin-left: 3em;
+        margin-bottom: 2em;
+    }
+
+    .fas.fa-plus {
+        padding-left: .6em;
+    }
+
 /* pie section */ 
 
     /* .pie-container {
@@ -245,6 +262,16 @@
       .arrow-right{
         display: none;
     }
+
+    /* sidebar section */
+
+    #close_add_income {
+        
+    }
+
+
+
+
 
       /* media queries section */ 
 @media screen and (min-width:768px  ) and (max-width:1024px) {
