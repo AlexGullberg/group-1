@@ -137,7 +137,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 50em;
+  height: 50vh;
 }
 .info-salespitch-image{
   height: 10em;
@@ -163,7 +163,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 50em;
+  height: 50vh;
 }
 .info-idea{
   grid-area: idea;
@@ -174,16 +174,16 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+/* 
 .info-idea img{
   width: 100%;
   height: 100%;
   object-fit: cover;  
-}
+} */
 .idea-text-container{
 
   background-color: RGBA(215,186,159,0.30);
   position: absolute;
-  height: 20vh;
   width: 30vw;
   top: 40%;
   left: 10vw;
@@ -236,6 +236,84 @@ margin-bottom: 20px;
 .trustpilot-widget img{
   border-radius: 15px;
 }
+
+
+
+.cus-div {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+
+#skew1 {
+  background-color: #9BDBCD;
+  z-index: 9;
+}
+
+#skew2 {
+  background-color: #BDE4DF;
+  z-index: 8;
+}
+
+#skew3 {
+  background: #fafaf8;
+  background-position: center bottom;
+  z-index: 7;
+  height: 78vh;
+}
+
+#skew4 {
+  background-color: #9BDBCD;
+  z-index: 6;
+}
+
+.cus-div:after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  content: "";
+}
+
+#skew3:after {
+  background: url(../images/Johanna.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  z-index: 7;
+  height: 70vh;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  z-index: -1;
+  bottom: 0;
+  content: "";
+}
+
+#skew1:after,
+#skew3:after,
+#skew4:after {
+  transform-origin: left bottom;
+  transform: skewY(5deg);
+}
+
+#skew2:after,
+#skew4:after {
+  transform-origin: right bottom;
+  transform: skewY(-5deg);
+}
+
+#skew4:after {
+  transform-origin: bottom;
+  transform: skewY(0deg);
+}
+
+
+
+/* 
 .info-video::before, .info-video::after{
  background-color: #9BDBCD;
   content: '';
@@ -258,7 +336,7 @@ margin-bottom: 20px;
   bottom: 0;
   transform: skewY(-1.5deg);
   transform-origin: 100%;
-}
+} */
 
 /* #cus-div{
   width: 100%;
