@@ -11,6 +11,14 @@ body {
   text-align: center;
 }
 
+.usual-text-size {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+
+a {
+  text-decoration: none;
+}
+
 .hero-background-image {
   background-image: url("/assets/images/startpage.jpg");
   width: 100vw;
@@ -53,7 +61,7 @@ body {
 }
 
 .read-more:hover {
-  color: #c96929;
+  color: #9BDBCD;
 }
 
 .login-form {
@@ -146,7 +154,6 @@ body {
 .info-salespitch-text-container{
   background-color: RGBA(255,255,255,0.30);
   /* position: absolute; */
-  height: 15vh;
   width: 30vw;
   top: 40%;
   left: 10vw;
@@ -164,11 +171,12 @@ body {
   justify-content: space-evenly;
   align-items: center;
   height: 50vh;
+  padding-top: 10vh;
 }
 
 .info-video-video{
   height: 30vh;
-  width: 20vw;
+  width: 35vw;
 }
 .info-idea{
   grid-area: idea;
@@ -218,21 +226,18 @@ body {
   height: 40em; 
   z-index: 7;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .why-text-container{
   color: black;
-  top: 20%;
-  left: 10%; 
+  margin-right:20vw;
 }
 .why-text-container h3{         
 font-size:56px ;
 margin-bottom: 20px;
 }
-.why-text-container ul{
-  font-size: 35px;
-}
+
 .trustpilot-widget{
  
   top:20%;
@@ -316,6 +321,29 @@ margin-bottom: 20px;
   transform: skewY(0deg);
 }
 
+a { color: inherit; }
+
+footer {
+  text-align: center;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  background-color: #9BDBCD;
+  padding-bottom: 3em;
+}
+
+.our-footer:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40vw;
+  height: 5px;
+  background-color: #000;
+  margin-left: 30vw;
+  opacity: .5;
+}
+
+.copywrite-footer {
+  margin-top: 3em;
+}
 
 
 /* 

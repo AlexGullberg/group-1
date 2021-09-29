@@ -48,7 +48,7 @@
       </form>
     </div>
   </div>
-  <section class="hero-background-image">
+  <section id="top-section" class="hero-background-image">
     <div class="row center hero-row">
       <div class="frame col-10 offset-1 col-md-6 offset-md-3">
         <h1 class="main-header">Johannas budget</h1>
@@ -65,14 +65,16 @@
         </button>
       </div>
     </div>
+    <a href="#info_start">
     <div class="read-more">
       <h3>Läs mer!</h3>
       <i class="fas fa-arrow-down"></i>
     </div>
+    </a>
   </section>
 
   <!-- // Read more delen  -->
-  <div class="info-start">
+  <div id="info_start" class="info-start">
   <div class="info-salespitch cus-div" id="skew1">
     <svg width="654" height="293" viewBox="0 0 654 293" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M138.695 276.696C123.036 266.786 111.651 248.972 113.981 230.962C128.081 245.179 146.904 254.095 167.122 256.131C174.921 256.889 183.678 256.944 189.217 262.33C192.664 265.682 194.128 270.58 194.203 275.316C194.279 280.052 193.107 284.714 191.943 289.314L192.229 290.463C173.551 289.793 154.354 286.606 138.695 276.696Z" fill="#F0F0F0"/>
@@ -145,7 +147,7 @@
 
 
     <div class="info-salespitch-text-container">
-      <p class="info-salespitch-text">
+      <p class="info-salespitch-text usual-text-size">
         Ska jag köpa det nya spelet på Steam?<br />
         Eller ett par byxor? <br />
         Kanske en tavla till vardagsrummet? <br />
@@ -201,9 +203,9 @@
       
     <!--lägg "un.draw ritade tjejen" bilden i tagg -->
 
-    <video class="info-video-video"controls>
+    <video class="info-video-video"autoplay loop muted>
       <!--Random video från mattias html övning -->
-      <source src="https: //www.w3schools.com/tags/movie.mp4" type="video/mp4" />
+      <source src="assets/images/money-video.mp4" type="video/mp4" />
       Your Browser does not support the video tag
     </video>
   </div>
@@ -211,10 +213,12 @@
     <!-- <img src="/assets/images/Johanna.png" alt="Johanna"> -->
     <div class="idea-text-container">
       <h4>Johannas Vision</h4>
-      <p> Johanna har själv gått från att i princip leva ur hand i mun,
+      <p class="usual-text-size"> Johanna har själv gått från att i princip leva ur hand i mun,
         utan att spara något alls, till att nu snart</ vara nära sin första miljon. Nu vill hon hjälpa andra att ta
           kontroll över sin ekonomi</p>
-          <p type="submit" class="btn" id="idea-btn">Logga in</p>
+          <a href="#top-section">
+           <p type="submit" class="btn" id="idea-btn">Registrera nu!</p>
+          </a>
 
     </div>
   </div>
@@ -222,14 +226,19 @@
     <div class="why-text-container">
       <h3>Why Us?</h3>
       <ul>
-        <li>Cool function</li>
-        <li> Better life</li>
-        <li> Stop hating everything</li>
-        <li> Become a millionare</li>
+        <li class="usual-text-size">Cool function</li>
+        <li class="usual-text-size"> Better life</li>
+        <li class="usual-text-size"> Stop hating everything</li>
+        <li class="usual-text-size"> Become a millionare</li>
       </ul>
     </div>
     <div class="trustpilot-widget"><img src="/assets/images/trustpilot-widget-example.png" alt="trustpilotwidget"></div>
   </div>
+  <footer class="our-footer">
+    <div class="copywrite-footer">
+      &copy; <em id="date"></em>Basgrupp 1 - 2021
+    </div>
+  </footer>
 </div>
   <script src="assets/script/main.js">
   </script>
