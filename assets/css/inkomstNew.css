@@ -266,9 +266,61 @@
     /* sidebar section */
 
     #close_add_income {
-        
+        position: absolute;
+        right: 1.5em;
+        font-size: 1.5em;
     }
 
+    .input-group.mb-3.name-input {
+        margin: 1em 0;
+    } 
+
+    .recurring-checkbox {
+        margin-top: 1em;
+        border-radius: 40px;
+        padding-left:1em;
+        padding-right: 1em;
+    }
+
+    .save-add-income {
+        display: block;
+        margin: auto;
+        margin-top: 1em;
+        background-color: rgba(0, 117, 255, .8);
+        border: none;
+        border-radius: 40px;
+        padding-left:1em;
+        padding-right: 1em;
+    }
+
+    .add-income-form-header {
+        margin-bottom:1em;
+    }
+
+    .input-container {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .add-income-view {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        background-color: rgba(0, 0, 0, 0.5);
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s linear;
+      }
+      
+      .add-income-view-toggle {
+        visibility: visible;
+        opacity: 1;
+      }
+
+    
 
 
 

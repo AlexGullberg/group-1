@@ -25,11 +25,12 @@
       </div>
 
 
-      <div id="register_view" class="login-view">
+      <div id="add_income_view" class="add-income-view">
         <div class="login-form add-income-form">
           <i id="close_add_income" class="fas fa-times icon-close"></i>
           <form>
-            <h2>Lägg till inkomst</h2>
+            <h2 class="add-income-form-header h2-header">Lägg till inkomst</h2>
+            <div class="input-container">
             <div class="input-group">
 
               <span class="input-group-text" id="name-employer">Kategori:</span>
@@ -41,21 +42,22 @@
                 <option> Scamming</option>
               </select>
             </div>
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 name-input">
               <span class="input-group-text" id="name-employer">Namn</span>
               <!-- <label for="name-employer">Namn: </label> -->
               <!-- <input type="text" id="name-employer"> -->
               <input id="name-employer" type="text" class="form-control" placeholder="Arbetsgivare" aria-label="name" aria-describedby="name-employer">
             </div>
             <div class="input-group">
-              <span class="input-group-text" id="name-employer">Kategori:</span>
+              <span class="input-group-text" id="name-employer">Datum:</span>
               <input type="date" class="form-control" max="2021-12-31" min="">
             </div>
-            <div class="form-group">
-              <button class="btn-delete">X</button><label for="btn-delete">Radera</label>
-              <button class="btn-Återkommande">X</button><label for="btn-Återkommande">Återkommande</label>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+              <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="on">
+              <label class="btn btn-outline-success recurring-checkbox" for="btncheck1">Återkommande</label>
             </div>
-            <p type="submit" class="btn btn-primary">Spara</p>
+            <button type="submit" class="btn btn-primary save-add-income">Spara</button>
+          </div>
           </form>
         </div>
       </div>
@@ -148,6 +150,7 @@
     <script src="/assets/script/pie.js"></script>
     <script src="assets/script/inkomst.js"></script>
     <script src="assets/script/sideBar.js"></script>
+    <script src="assets/script/toggleAddIncome.js"></script>
 
 </body>
 </html>
